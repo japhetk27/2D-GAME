@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="BOTTOM_CENTER" spacing="20" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Ressources.Java.Controller">
+    <children>
+
+        <ImageView fitWidth="380" fitHeight="200" onMouseClicked="#playButtonAction" style="-fx-cursor: hand;">
+            <image>
+                <Image url="@/main/Ressources/Images/platButton.gif"/>
+            </image>
+        </ImageView>
+
+
+        <Button fx:id="themeButton" text="Choose Theme" style="-fx-font: 16px 'CustomFont'; -fx-cursor: hand; -fx-background-color: #B62BBD; -fx-text-fill: white; -fx-border-radius: 90px;" onAction="#setThemeAction" />
+
+
+        <Label fx:id="label" text="Label" style="-fx-text-fill: white; -fx-font-size: 8px;" />
+    </children>
+</VBox>
